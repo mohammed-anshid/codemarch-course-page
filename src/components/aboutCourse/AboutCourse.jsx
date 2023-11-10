@@ -4,11 +4,11 @@ const AboutCourse = () => {
       <div className="h-[2px]"></div>
       <div className="flex">
         <div className="w-[2px]"></div>
-        <div className=" p-3 m-[1px] lg:p-20   bg-gradient-to-b from-[#013229] to-[#011F1A]  rounded-xl    ">
+        <div className=" p-3 m-[1px] lg:p-12  bg-gradient-to-b from-[#013229] to-[#011F1A]  rounded-xl    ">
           <h1 className="font-darker-grotesque text-5xl text-[rgb(237,241,228)]">
             About this course
           </h1>
-          <p className="mt-11 font-dm-sans font-normal text-[#D7CEA5]">
+          <p className="mt-8 font-dm-sans font-normal leading-8 text-base  text-[#D7CEA5]">
             You interact with JavaScript code all the time — you just might not
             realize it. It powers dynamic behavior on websites (like this one)
             and plays an important role in many fields, like front- and back-end
@@ -17,7 +17,7 @@ const AboutCourse = () => {
             helpful as you dive deeper into more advanced topics.
           </p>
 
-          <div className="flex mt-16 gap-4 flex-col ">
+          <div className="flex mt-10 gap-4 ">
             <h1 className="text-4xl font-darker-grotesque lg:text-5xl text-[#EDF1E4]  font-extrabold">
               Syllabus
             </h1>

@@ -23,11 +23,11 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="mt-36">
-      <h1 className="text-5xl font-darker-grotesque text-center font-extrabold lg:text-[5rem] text-[#EDF1E4] ">
+    <div className="mt-24">
+      <h1 className="text-5xl font-darker-grotesque text-center font-extrabold lg:text-[4rem] text-[#EDF1E4] ">
         Frequently Asked Questions
       </h1>
-      <div className="mt-40">
+      <div className="mt-32">
         <FaqAccordian
           heading="What is JavaScript?"
           text="JavaScript is mainly used to add animations and interactive elements to websites, but there are libraries and frameworks that extend its use into mobile development, game development, and more. You can even use it to build virtual reality applications and artificial intelligence."
@@ -63,7 +63,7 @@ const FaqAccordian = ({ heading, text, open }) => {
     <div className=" mt-8">
       <div>
         <div className="flex justify-between ">
-          <h3 className="font-dm-sans font-bold text-[#EDF1E4] text-lg lg:text-[2rem]">
+          <h3 className="font-dm-sans font-bold text-[#EDF1E4] text-lg lg:text-[1.5rem]">
             {heading}
           </h3>
           <div>
@@ -71,7 +71,7 @@ const FaqAccordian = ({ heading, text, open }) => {
           </div>
         </div>
         {open && (
-          <p className="font-dm-sans font-normal text-[#D7CEA5] mt-3 text-sm lg:text-2xl w-[95%]">
+          <p className="font-dm-sans font-normal text-[#D7CEA5] mt-8 text-sm lg:text-lg w-[95%]">
             {text}
           </p>
         )}

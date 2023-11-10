@@ -14,7 +14,7 @@
 
 }
 .learnJsParagaph{
-    @apply  leading-10 font-dm-sans text-sm lg:text-2xl text-[#D7CEA5]
+    @apply  leading-10 font-dm-sans text-sm lg:text-lg text-[#D7CEA5]
 }
 .learnJsPointContainer{
     @apply pb-3 flex flex-col font-dm-sans font-bold

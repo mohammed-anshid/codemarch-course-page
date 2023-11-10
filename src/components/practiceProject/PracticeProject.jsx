@@ -31,10 +31,10 @@ const Card = ({ img, heading, text }) => {
   return (
     <div className="px-2">
       <img src={img} alt="" />
-      <h1 className="mt-10 text-4xl font-darker-grotesque font-extrabold text-[#EDF1E4]">
+      <h1 className="mt-6 text-4xl font-darker-grotesque font-extrabold text-[#EDF1E4]">
         {heading}
       </h1>
-      <p className="mt-8 font-dm-sans text-[#D7CEA5]">{text}</p>
+      <p className="mt-5 font-dm-sans text-lg text-[#D7CEA5]">{text}</p>
     </div>
   );
 };

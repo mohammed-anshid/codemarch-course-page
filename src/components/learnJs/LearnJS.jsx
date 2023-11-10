@@ -23,7 +23,7 @@ const LearnJS = () => {
           Enroll Now  <span><img src="" alt="" /></span>
         </button>
       </div>
-      <div className="w-full h-[206px] md:h-[490px] bg-slate-500 rounded"></div>
+      <div className="w-full h-[206px] md:h-[430px] bg-slate-500 rounded"></div>
       <h1 className={`${style.learnJsHeadingSmall} forHeadingSmallScreen`}>Learn JavaScript</h1>
     </div>
   );

@@ -35,7 +35,7 @@ const Points = ({ text }) => {
   return (
     <div className="flex items-center my-3 ">
       <img src="/tickIcon.svg" alt="" className="w-5 h-5 lg:w-8 lg:h-8"  width={32} height={32} />
-      <h3 className="text-sm font-bold  lg:text-2xl  bg-gradient-to-b from-[#EDF1E4] to-[#D7CEA5] bg-clip-text text-transparent ml-4">
+      <h3 className="text-sm font-bold  lg:text-xl  bg-gradient-to-b from-[#EDF1E4] to-[#D7CEA5] bg-clip-text text-transparent ml-4">
         {text}
       </h3>
     </div>

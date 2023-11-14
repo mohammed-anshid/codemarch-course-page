@@ -7,7 +7,7 @@
 
 }
 .learnJsLeft{
-    @apply text-sm md:w-[75%] flex flex-col justify-between
+    @apply text-sm md:w-[70%] flex flex-col justify-between
 }
 .learnJsHeading{
     @apply text-[#EDF1E4] text-[4rem] tracking-tight font-bold leading-none font-darker-grotesque

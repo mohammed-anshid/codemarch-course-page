@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const AboutCourse = () => {
   return (
     <div className="bg-gradient-to-b from-[#D7CEA5] to-[#3D8361] rounded-xl  mt-[7.5rem] ">
@@ -30,32 +32,26 @@ const AboutCourse = () => {
             <Accordian
               heading="Welcome to Learn JavaScript"
               text="Learn about what the JavaScript course has in store!"
-              open={false}
             />
             <Accordian
               heading="Introduction"
               text="Learn about what the JavaScript course has in store!"
-              open={true}
             />
             <Accordian
               heading="Conditionals"
               text="Learn about what the JavaScript course has in store!"
-              open={false}
             />
             <Accordian
               heading="Functions"
               text="Learn about what the JavaScript course has in store!"
-              open={false}
             />
             <Accordian
               heading="Scope"
               text="Learn about what the JavaScript course has in store!"
-              open={false}
             />
             <Accordian
               heading="Arrays"
               text="Learn about what the JavaScript course has in store!"
-              open={false}
             />
           </div>
           <div className="w-full flex justify-center mt-16">
@@ -73,7 +69,9 @@ const AboutCourse = () => {
 
 export default AboutCourse;
 
-const Accordian = ({ heading, text, open }) => {
+const Accordian = ({ heading, text }) => {
+  const [open,setOpen]=useState(false)
+  
   return (
     <div className="  mt-8">
       <div>
@@ -81,7 +79,7 @@ const Accordian = ({ heading, text, open }) => {
           <h3 className="font-dm-sans font-bold text-[#EDF1E4] text-xl">
             {heading}
           </h3>
-          <img src="/downArrow.svg" alt="" />
+          <img className={`${ open && "rotate-180"} cursor-pointer `} onClick={()=>setOpen(!open)} src="/downArrow.svg" alt="" />
         </div>
         <p className="font-dm-sans font-normal text-[#D7CEA5] mt-3">{text}</p>
       </div>
